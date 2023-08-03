@@ -1,0 +1,16 @@
+localstack:
+  host: localhost
+
+cloud:
+  aws:
+    credentials:
+      access-key: foo
+      secret-key: bar
+    sqs:
+      order-queue:
+        url: http://localhost:4566/000000000000/order-queue
+        name: order-queue
+    stack:
+      auto: false
+    region:
+      static: eu-west-1
